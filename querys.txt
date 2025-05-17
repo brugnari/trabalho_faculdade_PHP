@@ -1,12 +1,3 @@
-CREATE TABLE vendas (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    evento_id INT,
-    nome_comprador VARCHAR(255),
-    email VARCHAR(255),
-    quantidade INT,
-    data_venda DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (evento_id) REFERENCES eventos(id)
-);
 
 CREATE TABLE vendas (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -16,4 +7,14 @@ CREATE TABLE vendas (
     quantidade INT,
     data_venda DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (evento_id) REFERENCES eventos(id)
+);
+CREATE TABLE eventos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    data DATE NOT NULL,
+    local VARCHAR(150),
+    imagem VARCHAR(255),
+    preco DECIMAL(10,2) NOT NULL,
+    quantidade INT NOT NULL
 );

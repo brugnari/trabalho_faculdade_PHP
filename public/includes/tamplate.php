@@ -34,7 +34,7 @@
                 <a class="nav-link" href="cardapio.php">Cardapio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="reservas.php">Reservas</a>
+                <a class="nav-link" href="eventos.php">Eventos</a>
             </li>
 
         </ul>
